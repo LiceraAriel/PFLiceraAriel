@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallery</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Sweetalert -->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img class="logo" src="./Img/Logo para marca de agua circulo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio<span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="parrafos">
+        <h1 class="subtitulo">Productos</h1>
+        <section class="Conteinerproductos" id="contenedor_productos">
+            
+        </section>
+    </main>
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="contenedor_carrito">
+                        
+                    </div>
+                    <div class="totales">
+                        <p id="neto"></p>
+                        <p id="iva"></p>
+                        <p id="total"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar productos</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="vaciar">Vaciar</button>
+                        <button type="button" class="btn btn-primary" id="finalizar">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img class="logoFooter" src="./Img/Logo para marca de agua circulo.png" alt="Logo">
+        <p class="derechos">Derechos Reservados 2023</p>
+        <ul>
+            <i class="fa-brands fa-instagram derechos"></i>
+            <i class="fa-brands fa-twitter derechos"></i>
+        </ul>
+    </footer>
+</body>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!-- Toastify -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<!-- Sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- JavaScript -->
+<script src="./JavaScript/app.js"></script>
+
+</html>

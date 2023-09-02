@@ -1,0 +1,78 @@
+*{ 
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'footer footer footer';
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    }
+
+header{
+    grid-area: header;
+    font-size: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.parrafos{
+    grid-area: main;
+    background-image: url(../Img/6b7d102dc743f8900a8b00ebc1df5bd8.jpg)
+}
+
+.subtitulo{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.Conteinerproductos{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: auto auto auto;
+        align-content: space-around;
+        padding: 25px;
+}
+
+.totales{
+    text-align: center;
+    font-size: 15px;
+}
+
+#total{
+    font-size: 20px;
+    text-decoration:solid;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: rgb(24, 23, 23);
+    justify-content: space-around;
+    color: white;
+}
+
+.logoFooter{
+    width: 50px;
+    height: 50px;
+}
+
+.derechos{
+    margin-top: 10px;
+    margin-left: 15px;
+}
